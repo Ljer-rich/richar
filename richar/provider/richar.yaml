@@ -1,0 +1,17 @@
+identity:
+  author: Ljer-rich
+  name: richar
+  label:
+    en_US: richar
+    zh_Hans: richar
+    pt_BR: richar
+  description:
+    en_US: Visualizing structured data as charts
+    zh_Hans: Visualizing structured data as charts
+    pt_BR: Visualizing structured data as charts
+  icon: ri.svg
+tools:
+  - tools/richar.yaml
+extra:
+  python:
+    source: provider/richar.py

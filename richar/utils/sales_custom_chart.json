@@ -1,0 +1,62 @@
+{
+  "title": {
+    "text": "销售数据多维分析",
+    "subtext": "包含多个维度的数据展示"
+  },
+  "tooltip": {
+    "trigger": "axis"
+  },
+  "legend": {
+    "data": [
+      "销售额",
+      "利润"
+    ]
+  },
+  "xAxis": {
+    "type": "category",
+    "data": [
+      "2023-01-01",
+      "2023-01-02",
+      "2023-01-03",
+      "2023-01-04",
+      "2023-01-05"
+    ]
+  },
+  "yAxis": [
+    {
+      "type": "value",
+      "name": "销售额",
+      "position": "left"
+    },
+    {
+      "type": "value",
+      "name": "利润",
+      "position": "right"
+    }
+  ],
+  "series": [
+    {
+      "name": "销售额",
+      "type": "bar",
+      "data": [
+        0.2,
+        0.0,
+        0.6,
+        0.8,
+        1.0
+      ]
+    },
+    {
+      "name": "利润",
+      "type": "line",
+      "yAxisIndex": 1,
+      "data": [
+        0.2,
+        0.3,
+        0.0,
+        0.8,
+        1.0
+      ]
+    }
+  ]
+}

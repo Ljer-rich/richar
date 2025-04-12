@@ -1,0 +1,70 @@
+identity:
+  name: Ljer-rich
+  author: richar
+  label:
+    en_US: richar
+    zh_Hans: richar
+    pt_BR: richar
+description:
+  human:
+    en_US: Visualizing structured data as charts
+    zh_Hans: Visualizing structured data as charts
+    pt_BR: Visualizing structured data as charts
+  llm: Visualizing structured data as charts
+parameters:
+  - name: model # the name of the model parameter
+    type: model-selector # model-type
+    scope: llm # the scope of the parameter
+    form: form
+    required: true
+    label:
+      en_US: Model
+      zh_Hans: 模型
+      pt_BR: Model
+    human_description:
+      en_US: LLM model for richar.
+      zh_Hans: LLM model for richar.
+      pt_BR: LLM model for richar.
+    llm_description: LLM model for text2data.
+  - name: data
+    type: string
+    required: true
+    label:
+      en_US: data
+      zh_Hans: 待处理的数据
+      pt_BR: data
+    human_description:
+      en_US: wait for data
+      zh_Hans: 待处理的数据
+      pt_BR: wait for data
+    llm_description: wait for data
+    form: llm
+  - name: chart_type
+    type: string
+    required: true
+    form: llm
+    label:
+      en_US: chart type
+      zh_Hans: 图表类型
+      pt_BR: chart type
+    human_description:
+      en_US: chart type
+      zh_Hans: 图表类型
+      pt_BR: chart type
+    llm_description: chart type
+  - name: custom_requirements
+    type: string
+    required: false
+    form: llm
+    label:
+      en_US: custom requirements
+      zh_Hans: 自定义需求
+      pt_BR: custom requirements
+    human_description:
+      en_US: custom requirements
+      zh_Hans: 自定义需求
+      pt_BR: custom requirements
+    llm_description: custom requirements
+extra:
+  python:
+    source: tools/richar.py

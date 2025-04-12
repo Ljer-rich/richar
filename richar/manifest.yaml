@@ -1,0 +1,50 @@
+version: 0.0.3
+type: plugin
+author: richar
+name: richar
+label:
+  en_US: richar
+  ja_JP: richar
+  zh_Hans: richar
+  pt_BR: richar
+description:
+  en_US: Visualizing structured data as charts
+  ja_JP: Visualizing structured data as charts
+  zh_Hans: Visualizing structured data as charts
+  pt_BR: Visualizing structured data as charts
+icon: ri.svg
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+    model:
+      enabled: true
+      llm: true
+      text_embedding: false
+      rerank: false
+      tts: false
+      speech2text: false
+      moderation: false
+    endpoint:
+      enabled: true
+    app:
+      enabled: true
+    storage:
+      enabled: true
+      size: 1048576
+plugins:
+  tools:
+    - provider/richar.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+created_at: 2025-03-25T16:31:58.018384834+08:00
+privacy: PRIVACY.md
+verified: false
